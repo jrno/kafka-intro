@@ -1,0 +1,16 @@
+{
+  "name": "kafka-intro",
+  "version": "1.0.0",
+  "description": "Kafka introductory presentation with few examples",
+  "main": "index.js",
+  "author": "Jarno Pohjonen",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "reveal-md": "^5.4.0"
+  },
+  "scripts": {
+    "diagram:build": "diagrams/build.sh",
+    "present": "reveal-md slides.md ---css style.css"
+  }
+}

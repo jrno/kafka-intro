@@ -1,0 +1,23 @@
+zookeeper_cluster: {
+  label: 'Zookeeper cluster'
+  ha-zoo1
+  ha-zoo2
+  ha-zoo3
+}
+
+kafka_cluster: {
+  label: 'Kafka cluster'
+  broker1
+  broker2
+  broker3
+}
+
+producer1 -> kafka_cluster: Push
+producer2 -> kafka_cluster: Push
+producer3 -> kafka_cluster: Push
+
+consumer1 <- kafka_cluster: Pull
+consumer2 <- kafka_cluster: Pull
+consumer3 <- kafka_cluster: Pull
+
+zookeeper_cluster <-> kafka_cluster: Manage

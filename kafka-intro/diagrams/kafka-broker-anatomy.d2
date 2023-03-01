@@ -1,0 +1,38 @@
+producer: {
+  label: Producer
+}
+
+# Broker
+broker: {
+  label: "Broker"
+  topic: {
+    label: "Topic"
+    partition1: {
+      msg1
+      msg2
+      msg3
+    }
+    partition2: {
+      msg4
+      msg5
+    }
+  }
+}
+
+# Group
+consumergroup: {
+  label: Group
+  consumer1: {
+    label: Consumer1
+  }
+  consumer2: {
+    label: Consumer2
+  }
+}
+
+# Associations
+producer -> broker.topic.partition1: Push
+producer -> broker.topic.partition2: Push
+
+consumergroup.consumer1 <- broker.topic.partition1: Pull
+consumergroup.consumer2 <- broker.topic.partition2: Pull
