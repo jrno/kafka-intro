@@ -353,7 +353,7 @@ Note:
 
 ## Thanks!
 
-> https://github.com/jrno/nodejs-kafka-intro
+> https://github.com/jrno/kafka-intro
 
 ---
 

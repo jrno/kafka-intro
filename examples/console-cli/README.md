@@ -1,5 +1,7 @@
 # Kafka CLI
 
+Bundled within Kafka distribution comes suite of utility shell scripts that can be used to interact with the cluster.
+
 ## Basic commands
 
 List topics

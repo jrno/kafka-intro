@@ -1,13 +1,20 @@
 # Examples
 
-All examples require a local Broker to be set up.
+All examples require a local broker to be set up.
 
-Download and from: https://kafka.apache.org/downloads
+Download and install from: https://kafka.apache.org/downloads
+
+Set-up for `.bashrc` / `.zshrc`
+
+```
+export KAFKA_HOME="$HOME/kafka_2.12-3.3.1"
+export PATH="$KAFKA_HOME/bin:$PATH"
+```
 
 ## console-cli
 
-Working with the cli tools such as `kafka-topics.sh`, `kafka-producer.sh` and `kafka-consumer.sh`
+Example of using the packaged cli tools such as `kafka-topics.sh`, `kafka-producer.sh` and `kafka-consumer.sh`
 
 ## simple-messaging
 
-Working with Kafka from NodeJS using [KafkaJS](https://kafka.js.org/)
+Example of using Kafka with NodeJS with the [KafkaJS](https://kafka.js.org/) library
